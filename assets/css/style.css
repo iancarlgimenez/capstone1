@@ -88,8 +88,20 @@
 }
 
 #navigationBar {
-	background-color: #050601;
+	background-color: #303030;
 	font-family: 'Cinzel', serif;
+	border-bottom: 1px solid #e5cd19;
+}
+
+#navigationMenu a {
+	transition: all 0.3s ease-in;
+}
+
+#navigationMenu a:hover {
+	-webkit-stroke-width: 5.3px;
+    -webkit-stroke-color: #FFFFFF;
+    -webkit-fill-color: #FFFFFF;
+    text-shadow: 1px 0px 20px yellow;
 }
 
 #navbarNav li {
@@ -98,7 +110,7 @@
 }
 
 #navbarNav a:hover {
-	color: #D0A765;
+	color: #e8d909;
 }
 
 .card-group .red-bg {
@@ -120,7 +132,8 @@
 
 .section-title {
 	margin-top: 5%;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
 }
 
 .card-group {
@@ -128,6 +141,9 @@
 }
 
 .footer-copyright {
-	background-color: #050601;
+	background-color: #303030;
 	color: white;
+	font-family: 'Raleway' sans-serif;
+	font-size: 12px;
+	letter-spacing: 1px;
 }
