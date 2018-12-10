@@ -1,3 +1,7 @@
+/*.container {
+	background-color: #999999;
+}*/
+
 .landing-page {
 	/*background: linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,.4)), url('../images/landing-background.jpg');*/
 	background-image: url('../images/landing-background3.jpg');
@@ -9,6 +13,7 @@
 
 
 .landing-header {
+	background: rgba(58,58,58,0.25);
 	font-family: 'Hind Madurai', sans-serif;
 	color: white;
 	margin-top: 25%;
@@ -125,9 +130,12 @@
 	background-color: #A56736;
 }
 
-.card-group .card {
-	margin-left: 5px;
-	margin-right: 5px;
+#card-group .card {
+	margin-left: 10px;
+	margin-right: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
 }
 
 .section-title {
@@ -140,10 +148,110 @@
 	color: white;
 }
 
-.footer-copyright {
+footer {
 	background-color: #303030;
 	color: white;
 	font-family: 'Raleway' sans-serif;
 	font-size: 12px;
 	letter-spacing: 1px;
+}
+
+
+#card-group .red {
+	background-color: #873329;
+}
+
+#card-group .purple {
+	background-color: #58556A;	
+}
+
+#card-group .brown {
+	background-color: #A56736;
+}
+
+.contact-container .row {
+	margin-bottom: 10px;
+}
+
+.contact-container form {
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+	width: 100%;
+}
+
+.contact-container button {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	background: #873329;
+	border: none;
+}
+
+.contact-container button:hover {
+	background: #D0A765;
+	color: black;
+
+}
+
+.contact-container iframe {
+	margin-top: 20px;
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.follow-us {
+	margin-top: 20px;
+	font-family: 'Hind Madurai', sans-serif;
+}
+
+
+#social-media-bar {
+	margin-bottom: 20px;
+}
+
+.fa {
+	padding-top: 16px;
+	padding-bottom: 16px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 40px;
+	width: 50px;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	margin: 5px 2px;
+	border-radius: 100%;
+	transition: all 0.3s ease-in;
+}
+
+.fa:hover {
+	color: white;
+	-webkit-stroke-width: 5.3px;
+    -webkit-stroke-color: #FFFFFF;
+    -webkit-fill-color: #FFFFFF;
+    text-shadow: 1px 0px 20px yellow;
+}
+
+.fa-facebook {
+	background: #3B5998;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+}
+
+.fa-youtube {
+  background: #bb0000;
+}
+
+.fa-instagram {
+  background: #125688;
+}
+
+.page-title {
+	font-size: 24px;
+	margin-top: 20px;
 }
