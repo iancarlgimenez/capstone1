@@ -317,15 +317,38 @@ footer {
 }
 
 .column {
-	flex: 25%;
-	max-width: 25%;
+	flex: 33.3%;
+	max-width: 33.3%;
 	padding: 0 4px;
 }
-
+/*.column {
+	height: 100vh;
+}
+*/
 .column img {
 	margin-top: 8px;
 	vertical-align: middle;
-	width: 50%;
+	/*width: 40%;*/
+}
+
+#gallery {
+	margin-top: 15px;
+	margin-bottom: 20px;
+	width: 70%;
+}
+
+#gallery img {
+	width: 100%;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: 1s ease-in-out;
+	transition: 1s ease-in-out;
+}
+
+#gallery img:hover {
+	-webkit-filter: grayscale(0%);
+	filter: grayscale(0%);
+	cursor: pointer;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
@@ -343,3 +366,4 @@ footer {
     max-width: 100%;
   }
 }
+

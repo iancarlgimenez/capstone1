@@ -22,6 +22,8 @@
 	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="assets/js/popper.min.js"></script>
 
+	<script type="text/javascript" src="assets/js/lightbox.js"></script>
+
 	<title>DesignMage</title>
 </head>
 <body>
@@ -55,25 +57,44 @@
 		</div>	
 	</nav>	<!-- END OF NAV BAR -->
 
-	<div class="row"> <!-- START OF GALLERY -->
-		<div class="column">
-			<img src="assets/images/gallery-image1.jpg">
-			<img src="assets/images/gallery-image3.jpg">
-			<img src="assets/images/gallery-image2.jpg">
-		</div>
+	<h1 class="page-title text-center animated fadeInDown slow">Gallery</h1>
 
-		<div class="column">
-			<img src="assets/images/gallery-image6.jpg">
-			<img src="assets/images/gallery-image5.jpg">
-			<img src="assets/images/gallery-image7.jpg">
-		</div>
 
-		<div class="column">
-			<img src="assets/images/gallery-image8.jpg">
-			<img src="assets/images/gallery-image9.jpg">
-			<img src="assets/images/gallery-image4.jpg">
-		</div>
+
+	<div class="container" id="gallery"> <!-- START OF GALLERY -->
+		<div class="row"> 
+			<div class="column"> <!-- col-lg-4 col-md-4 col-sm-12 -->
+				<img class="animated fadeIn slow delay-1s" src="assets/images/gallery-img1.jpg">
+				<img class="animated fadeIn slow delay-4s" src="assets/images/gallery-img2.jpg">
+				<img class="animated fadeIn slow delay-5s myImg" src="assets/images/gallery-img3.jpg">
+			</div>
+
+			<div class="column">
+				<img class="animated fadeIn slow delay-2s" src="assets/images/gallery-img4.jpg">
+				<img class="animated fadeIn slow delay-5s" src="assets/images/gallery-img5.jpg">
+				<img class="animated fadeIn slow delay-6s" src="assets/images/gallery-img6.jpg">
+			</div>
+
+			<div class="column">
+				<img class="animated fadeIn slow delay-3s" src="assets/images/gallery-img7.jpg">
+				<img class="animated fadeIn slow delay-6s" src="assets/images/gallery-img8.jpg">
+				<img class="animated fadeIn slow delay-7s" src="assets/images/gallery-img9.jpg">
+			</div>
+		</div> 
 	</div> <!-- END OF GALLERY -->
+	
+	<!-- THE MODAL -->
+	<div class="myModal" class="modal">
+		
+		<!-- THE CLOSE BUTTON -->
+		<span class="close">&times;</span>
+
+		<!-- MODAL CONTENT (THE IMAGE) -->
+		<img class="modal-content" id="img01"></img>
+
+		<!-- MODAL CAPTION (IMAGE TEXT) -->
+		<div id="caption"></div>
+	</div>
 
 
 	<footer class="footer-copyright text-center py-3">&copy; 2018 Copyright</footer> <!-- END OF FOOTER -->
