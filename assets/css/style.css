@@ -133,6 +133,10 @@ body {
 	background-color: #A56736;
 }
 
+.card-group .yellow-bg {
+	background-color: #c4b946;
+}
+
 #card-group .card {
 	margin-left: 10px;
 	margin-right: 10px;
