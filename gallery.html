@@ -5,14 +5,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE-Edge">
 
+	<link rel="shortcut icon" type="image/png" href="assets/images/logo-icon.png">
+
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-grid.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/lightbox.css">
 
-	<link href="https://fonts.googleapis.com/css?family=Comfortaa:700|Hind+Madurai|Lato|Cinzel|Raleway:500" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Hind+Madurai|Lato|Cinzel|Raleway:500|Poppins" rel="stylesheet">
 
 	<!-- social media icon -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -21,6 +24,10 @@
 	<script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="assets/js/popper.min.js"></script>
+	<script type="text/javascript" src="assets/js/lightbox.min.js"></script>
+
+	</script>
+
 
 	<script type="text/javascript" src="assets/js/lightbox.js"></script>
 
@@ -28,7 +35,7 @@
 </head>
 <body>
 	<nav id="navigationBar" class="navbar navbar-expand-lg navbar-dark sticky-top">
-		<a class="navbar-brand" href="#">
+		<a class="navbar-brand" href="home.html">
 			<img class="logo" src="assets/images/logo.png">
 		</a>
 
@@ -64,37 +71,97 @@
 	<div class="container" id="gallery"> <!-- START OF GALLERY -->
 		<div class="row"> 
 			<div class="column"> <!-- col-lg-4 col-md-4 col-sm-12 -->
-				<img class="animated fadeIn slow delay-1s" src="assets/images/gallery-img1.jpg">
-				<img class="animated fadeIn slow delay-4s" src="assets/images/gallery-img2.jpg">
-				<img class="animated fadeIn slow delay-5s myImg" src="assets/images/gallery-img3.jpg">
+
+				<div class="caption-box">
+					<a href="assets/images/gallery-img1.jpg" data-lightbox="gallery" data-title="Lights from within">
+						<img class="animated fadeIn slow delay-1s" src="assets/images/gallery-img1.jpg">
+					</a>
+
+					<div class="overlay">Lights from within</div>
+				</div>
+
+				<div class="caption-box">
+					<a href="assets/images/gallery-img2.jpg" data-lightbox="gallery" data-title="force of the ocean">
+						<img class="animated fadeIn slow delay-4s" src="assets/images/gallery-img2.jpg">
+					</a>
+
+					<div class="overlay">Force of the ocean</div>
+				</div>
+
+				<div class="caption-box">
+					<a href="assets/images/gallery-img3.jpg" data-lightbox="gallery" data-title="perfectly balanced">
+						<img class="animated fadeIn slow delay-5s myImg" src="assets/images/gallery-img3.jpg">
+					</a>
+
+					<div class="overlay">Perfectly balanced</div>
+				</div>
+				
 			</div>
 
 			<div class="column">
-				<img class="animated fadeIn slow delay-2s" src="assets/images/gallery-img4.jpg">
-				<img class="animated fadeIn slow delay-5s" src="assets/images/gallery-img5.jpg">
-				<img class="animated fadeIn slow delay-6s" src="assets/images/gallery-img6.jpg">
+
+
+				<div class="caption-box">
+					<a href="assets/images/gallery-img4.jpg" data-lightbox="gallery" data-title="piece of cloud on a cone">
+						<img class="animated fadeIn slow delay-2s" src="assets/images/gallery-img4.jpg">
+					</a>
+
+					<div class="overlay">Piece of cloud on a cone</div>
+				</div>
+
+				<div class="caption-box">
+					<a href="assets/images/gallery-img5.jpg" data-lightbox="gallery" data-title="warm and cool">
+						<img class="animated fadeIn slow delay-3s" src="assets/images/gallery-img5.jpg">
+					</a>
+
+					<div class="overlay">Warm and cool</div>
+				</div>
+
+				<div class="caption-box">
+					<a href="assets/images/gallery-img6.jpg" data-lightbox="gallery" data-title="droplets of light">
+						<img class="animated fadeIn slow delay-6s" src="assets/images/gallery-img6.jpg">
+					</a>
+
+					<div class="overlay">Droplets of light</div>
+				</div>
 			</div>
 
 			<div class="column">
-				<img class="animated fadeIn slow delay-3s" src="assets/images/gallery-img7.jpg">
-				<img class="animated fadeIn slow delay-6s" src="assets/images/gallery-img8.jpg">
-				<img class="animated fadeIn slow delay-7s" src="assets/images/gallery-img9.jpg">
+
+				<div class="caption-box">
+					<a href="assets/images/gallery-img7.jpg" data-lightbox="gallery" data-title="lady behind the bokeh">
+						<img class="animated fadeIn slow delay-3s" src="assets/images/gallery-img7.jpg">
+					</a>
+					<div class="overlay">Lady behind the bokeh</div>
+				</div>
+
+				<div class="caption-box">
+					<a href="assets/images/gallery-img8.jpg" data-lightbox="gallery" data-title="the golden hour">
+						<img class="animated fadeIn slow delay-6s" src="assets/images/gallery-img8.jpg">
+					</a>
+
+					<div class="overlay">The golden hour</div>
+				</div>
+
+				<div class="caption-box">
+					<a href="assets/images/gallery-img9.jpg" data-lightbox="gallery" data-title="glittering dark beauty">
+						<img class="animated fadeIn slow delay-7s" src="assets/images/gallery-img9.jpg">
+					</a>
+					<div class="overlay">Glittering dark beauty</div>
+				</div>
+
+
+				<div class="caption-box">
+					<a href="assets/images/gallery-img10.jpg" data-lightbox="gallery" data-title="clear glass sphere">
+						<img class="animated fadeIn slow delay-7s" src="assets/images/gallery-img10.jpg">
+					</a>
+
+					<div class="overlay">Clear glass sphere</div>
+				</div>
 			</div>
 		</div> 
 	</div> <!-- END OF GALLERY -->
 	
-	<!-- THE MODAL -->
-	<div class="myModal" class="modal">
-		
-		<!-- THE CLOSE BUTTON -->
-		<span class="close">&times;</span>
-
-		<!-- MODAL CONTENT (THE IMAGE) -->
-		<img class="modal-content" id="img01"></img>
-
-		<!-- MODAL CAPTION (IMAGE TEXT) -->
-		<div id="caption"></div>
-	</div>
 
 
 	<footer class="footer-copyright text-center py-3">&copy; 2018 Copyright</footer> <!-- END OF FOOTER -->

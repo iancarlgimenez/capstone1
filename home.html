@@ -5,6 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE-Edge">
 
+	<link rel="shortcut icon" type="image/png" href="assets/images/logo-icon.png">
+
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
@@ -12,7 +14,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
-	<link href="https://fonts.googleapis.com/css?family=Comfortaa:700|Hind+Madurai|Lato|Cinzel|Raleway:500" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Hind+Madurai|Lato|Cinzel|Raleway:500|Poppins" rel="stylesheet">
 
 	<!-- JAVASCRIPT -->
 	<script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
@@ -24,7 +26,7 @@
 <body>
 	<!-- <div class="container"> -->
 		<nav id="navigationBar" class="navbar navbar-expand-lg navbar-dark sticky-top animated fadeInDown slow">
-			<a class="navbar-brand" href="#">
+			<a class="navbar-brand" href="home.html">
 				<img class="logo" src="assets/images/logo.png">
 			</a>
 
@@ -53,7 +55,7 @@
 			</div>	
 		</nav>	<!-- END OF NAV BAR -->
 
-		<div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+		<div id="carousel" class="carousel slide carousel-fade animated fadeIn slow delay-1s" data-ride="carousel">
 			<ol class="carousel-indicators">
 				<li data-target="#carousel" data-slide-to="0" class="
 				active"></li>
@@ -97,7 +99,7 @@
 
 		<div class="container">		
 				<h2 class="section-title text-center">
-					FEATURED SERVICES
+					Featured Services
 				</h2>
 
 				<div id="card-group" class="card-group">
@@ -105,6 +107,8 @@
 						<img class="card-img-top card-img" src="assets/images/card-image1.jpg " alt="card image 1">
 						<div class="card-body text-center red-bg">
 							<p class="card-text">Create a website that will help to promote your business</p>
+
+							<a href="#" class="btn btn-primary">Read More..</a>
 						</div>
 					</div>
 
@@ -112,6 +116,8 @@
 						<img class="card-img-top card-img" src="assets/images/card-image2.jpg " alt="card image 2">
 						<div class="card-body text-center purple-bg">
 							<p class="card-text">Create stunning print designs such as posters and brochures</p>
+
+							<a href="#" class="btn btn-primary">Read More..</a>
 						</div>
 					</div>
 
@@ -119,12 +125,35 @@
 						<img class="card-img-top card-img" src="assets/images/card-image3.jpg " alt="card image 3">
 						<div class="card-body text-center brown-bg">
 							<p class="card-text">Create a new branding and identity design for your company</p>
+
+							<a href="#" class="btn btn-primary">Read More..</a>
 						</div>
 					</div>
 				</div>	<!-- END OF CARD GROUP -->
 		</div> <!-- END OF CONTAINER -->
 
 		<footer class="footer-copyright text-center py-3">&copy; 2018 Copyright</footer>
+
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('.card').hover(
+					//TRIGGER WHEN MOUSE HOVER
+					function(){
+						$(this).animate({
+							marginTop: "-=1%",
+						},200);
+					},
+
+					//TRIGGER WHEN MOUSE OUT
+					function(){
+						$(this).animate({
+							marginTop: "0%"
+						},200);
+					}
+				);
+			});
+		</script>
 	
 </body>
 </html>
